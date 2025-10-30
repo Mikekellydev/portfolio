@@ -32,7 +32,7 @@
     <a class="logo" href="index.html">MK</a>
     <button id="themeToggle" aria-label="Toggle theme">☀️</button>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -74,14 +74,14 @@
 
   <!-- Quick stats with explicit, recruiter-friendly framing -->
   <section class="grid three stats" aria-label="Key metrics">
-    <div class="stat"><span>20+</span><small>Years leadership & operations</small></div>
-    <div class="stat"><span>100+</span><small>Personnel trained & mentored</small></div>
-    <div class="stat"><span>3</span><small>Graduate degrees / certs in progress</small></div>
+    <div class="stat card card-elevate"><span>20+</span><small>Years leadership & operations</small></div>
+    <div class="stat card card-elevate"><span>100+</span><small>Personnel trained & mentored</small></div>
+    <div class="stat card card-elevate"><span>3</span><small>Graduate degrees / certs in progress</small></div>
   </section>
 
   <!-- Selected impact - replace the placeholders with real, specific metrics -->
   <section class="grid two feature" aria-labelledby="impact-heading">
-    <div>
+    <div class="card card-elevate">
       <h2 id="impact-heading">Selected Impact</h2>
       <ul class="impact-list">
         <li><strong>Operational stability:</strong> Implemented M365 governance and monitoring that reduced repeat incidents — replace with your metric (e.g., "40% fewer incidents").</li>
@@ -91,7 +91,7 @@
       <a class="arrow" href="projects.html">See projects →</a>
     </div>
 
-    <div class="card">
+    <div class="card card-elevate">
       <h3>Core Capabilities</h3>
       <ul class="check">
         <li>Microsoft 365: Exchange, SharePoint, Teams, OneDrive</li>
@@ -104,23 +104,23 @@
 
   <!-- Short recruiter-focused section: What I'm looking for -->
   <section class="grid two recruiter" aria-labelledby="looking-heading">
-    <div>
+    <div class="card card-elevate">
       <h2 id="looking-heading">What I'm looking for</h2>
       <p>Seeking leadership roles where I can combine cloud architecture, identity/security, and people operations: IT Director, Cloud Architect, Head of MSP, or Senior Consultant for mission-driven organizations.</p>
       <a class="arrow" href="contact.html">Let's connect →</a>
     </div>
-    <div class="card">
+    <div class="card card-elevate">
       <h3>Search-friendly keywords</h3>
       <p>Microsoft 365, Entra ID, Azure AD, Identity & Access Management, Cloud Governance, Security, MS Teams, Exchange, SharePoint, OneDrive, MSP, ITIL, Help Desk</p>
     </div>
   </section>
 
   <section class="grid two testimonial">
-    <blockquote>
+    <blockquote class="card card-elevate">
       <p>“Michael is one of those rare people who leads with both heart and skill… he shows up with clarity, compassion, and purpose.”</p>
       <cite>— Recommendation on LinkedIn</cite>
     </blockquote>
-    <div>
+    <div class="card card-elevate">
       <h2>Ministry & Mentorship</h2>
       <p>I equip multi-generational groups and volunteer teams for discipleship and community impact—bringing the same disciplined, people-first leadership to technical teams.</p>
       <a class="arrow" href="about.html">Read my story →</a>
@@ -137,8 +137,27 @@
   </footer>
 
   <script>
-    // small JS to set the current year
+    // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add a brief "tap" visual for cards on touch devices
+    (function () {
+      const cards = Array.from(document.querySelectorAll('.card-elevate'));
+      function addTap(e) {
+        const c = e.currentTarget;
+        c.classList.add('is-tapped');
+      }
+      function removeTap(e) {
+        const c = e.currentTarget;
+        // Allow a short delay so users can see the feedback
+        setTimeout(() => c.classList.remove('is-tapped'), 150);
+      }
+      cards.forEach(card => {
+        card.addEventListener('touchstart', addTap, { passive: true });
+        card.addEventListener('touchend', removeTap, { passive: true });
+        card.addEventListener('touchcancel', removeTap, { passive: true });
+      });
+    })();
   </script>
 </body>
 </html>
