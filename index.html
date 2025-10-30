@@ -1,18 +1,34 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Michael D. Kelly, MA, MDiv — Mission-Aligned IT & Ministry</title>
+  <title>Michael D. Kelly — IT Director | Cloud & Security | Mission-Aligned Leadership</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Mission-driven IT leader and US Navy veteran equipping teams with Microsoft 365, cloud operations, and values-based leadership." />
+  <meta name="description" content="Michael D. Kelly — Mission-driven IT leader, US Navy veteran. Microsoft 365, Azure/Entra ID, cloud operations, help desk ops, and values-based leadership." />
+  <meta name="keywords" content="Microsoft 365, Azure, Entra ID, Cloud Architect, IT Director, Help Desk, MSP, WordPress, CRM, Security" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
   <script defer src="assets/script.js"></script>
+
+  <!-- Structured data to help search / recruiter tools find core info -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael D. Kelly",
+    "jobTitle": "IT Director, Cloud & Security Solution Architect",
+    "sameAs": [
+      "https://www.linkedin.com/in/michaeldavidkelly",
+      "https://sparkwaveitservice.com"
+    ],
+    "description": "Mission-driven IT leader and US Navy veteran equipping teams with Microsoft 365, cloud operations, and values-based leadership."
+  }
+  </script>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav" aria-label="Main navigation">
     <a class="logo" href="index.html">MK</a>
     <button id="themeToggle" aria-label="Toggle theme">☀️</button>
     <ul>
@@ -20,48 +36,83 @@
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets/Michael_D_Kelly_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
     </ul>
   </nav>
+
+  <!-- Top banner to clearly state availability and target roles -->
+  <div class="availability-banner" role="status" aria-live="polite">
+    Open to: Director of IT, Cloud/Entra ID Architect, MSP Leadership — Available for consulting and full-time roles
+  </div>
 
   <header class="hero">
     <div class="hero-inner">
       <h1>Michael D. Kelly, MA, MDiv</h1>
-      <p class="tagline">Mission-Focused IT Director • Cloud & Security Solution Architect • Managed Service Provider • US Navy Veteran • Author</p>
+      <p class="tagline">Mission-Focused IT Director • Cloud & Security Solution Architect • US Navy Veteran</p>
+
+      <!-- Short professional summary recruiters scan first -->
+      <p class="summary">
+        I build secure, people-first cloud & collaboration platforms (Microsoft 365, Azure/Entra ID) that reduce friction for teams and protect mission-critical data.
+        Experience leading help desk ops, MSP services, WordPress+CRM implementations for ministries and nonprofits.
+      </p>
+
       <div class="cta">
-        <a class="btn" href="contact.html">Hire Me</a>
-        <a class="btn ghost" href="about.html">Learn More</a>
+        <!-- strong call-to-actions for recruiters -->
+        <a class="btn primary" href="contact.html">Contact / Schedule Chat</a>
+        <a class="btn" href="assets/Michael_D_Kelly_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/michaeldavidkelly" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <ul class="quick-badges">
+
+      <ul class="quick-badges" aria-hidden="false">
         <li>Microsoft 365</li>
         <li>Azure / Entra ID</li>
-        <li>Remote Help Desk</li>
+        <li>Help Desk Ops</li>
         <li>WordPress & CRM</li>
       </ul>
     </div>
   </header>
 
-  <section class="grid two feature">
+  <!-- Quick stats with explicit, recruiter-friendly framing -->
+  <section class="grid three stats" aria-label="Key metrics">
+    <div class="stat"><span>20+</span><small>Years leadership & operations</small></div>
+    <div class="stat"><span>100+</span><small>Personnel trained & mentored</small></div>
+    <div class="stat"><span>3</span><small>Graduate degrees / certs in progress</small></div>
+  </section>
+
+  <!-- Selected impact - replace the placeholders with real, specific metrics -->
+  <section class="grid two feature" aria-labelledby="impact-heading">
     <div>
-      <h2>Mission-Aligned IT</h2>
-      <p>I design calm, reliable systems that serve the mission—not the other way around. From M365 administration to
-      lightweight cloud architectures, my focus is clarity, security, and steady rhythms that build trust.</p>
+      <h2 id="impact-heading">Selected Impact</h2>
+      <ul class="impact-list">
+        <li><strong>Operational stability:</strong> Implemented M365 governance and monitoring that reduced repeat incidents — replace with your metric (e.g., "40% fewer incidents").</li>
+        <li><strong>Identity & security:</strong> Led Entra ID identity consolidation for multi-tenant organizations, improving access controls and reducing MFA friction for users.</li>
+        <li><strong>Service delivery:</strong> Built help desk SOPs and onboarding that improved first-call resolution and reduced new-user ramp time — replace with your metric.</li>
+      </ul>
       <a class="arrow" href="projects.html">See projects →</a>
     </div>
+
     <div class="card">
       <h3>Core Capabilities</h3>
       <ul class="check">
         <li>Microsoft 365: Exchange, SharePoint, Teams, OneDrive</li>
-        <li>Azure / Entra ID, identity & access management</li>
-        <li>Help desk ops, documentation, SOPs, onboarding</li>
-        <li>WordPress + CRM for ministries & nonprofits</li>
+        <li>Azure / Entra ID: Identity lifecycle, conditional access, hybrid identity</li>
+        <li>Help desk ops, SOPs, onboarding, documentation</li>
+        <li>WordPress + CRM for ministries & nonprofits; site & CRM migrations</li>
       </ul>
     </div>
   </section>
 
-  <section class="grid three stats">
-    <div class="stat"><span>20+</span><small>Years of Leadership</small></div>
-    <div class="stat"><span>100+</span><small>Personnel Trained</small></div>
-    <div class="stat"><span>3</span><small>Graduate Degrees/Certs In Progress</small></div>
+  <!-- Short recruiter-focused section: What I'm looking for -->
+  <section class="grid two recruiter" aria-labelledby="looking-heading">
+    <div>
+      <h2 id="looking-heading">What I'm looking for</h2>
+      <p>Seeking leadership roles where I can combine cloud architecture, identity/security, and people operations: IT Director, Cloud Architect, Head of MSP, or Senior Consultant for mission-driven organizations.</p>
+      <a class="arrow" href="contact.html">Let's connect →</a>
+    </div>
+    <div class="card">
+      <h3>Search-friendly keywords</h3>
+      <p>Microsoft 365, Entra ID, Azure AD, Identity & Access Management, Cloud Governance, Security, MS Teams, Exchange, SharePoint, OneDrive, MSP, ITIL, Help Desk</p>
+    </div>
   </section>
 
   <section class="grid two testimonial">
@@ -71,16 +122,23 @@
     </blockquote>
     <div>
       <h2>Ministry & Mentorship</h2>
-      <p>I equip multi-generational groups and volunteer teams for discipleship and community impact—bringing the same
-      disciplined, people-first leadership to technical teams.</p>
+      <p>I equip multi-generational groups and volunteer teams for discipleship and community impact—bringing the same disciplined, people-first leadership to technical teams.</p>
       <a class="arrow" href="about.html">Read my story →</a>
     </div>
   </section>
 
   <footer class="footer">
     <p>© <span id="year"></span> Michael D. Kelly, MA, MDiv. Built for GitHub Pages.</p>
-    <p><a href="https://www.linkedin.com/in/michaeldavidkelly" target="_blank" rel="noopener">LinkedIn</a> ·
-       <a href="https://sparkwaveitservice.com" target="_blank" rel="noopener">SparkWave IT Service</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/michaeldavidkelly" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://sparkwaveitservice.com" target="_blank" rel="noopener">SparkWave IT Service</a> ·
+      <a href="assets/Michael_D_Kelly_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    </p>
   </footer>
+
+  <script>
+    // small JS to set the current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
