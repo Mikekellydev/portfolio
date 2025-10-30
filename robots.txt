@@ -1,0 +1,6 @@
+# robots.txt for sparkwaveitservice.com
+User-agent: *
+Allow: /
+
+# Point crawlers to your sitemap
+Sitemap: https://sparkwaveitservice.com/sitemap.xml
