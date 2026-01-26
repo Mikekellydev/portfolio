@@ -300,24 +300,36 @@ blockquote cite{
   }
 }
 
-/* Horizontal instructional list (no bullets) */
+/* Horizontal pill list aligned like the CTAs */
 .inline-list{
   list-style: none;
   padding: 0;
-  margin: 12px 0;
+  margin: 12px auto 0;
 
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 20px;
+  justify-content: center;     /* key fix */
+  align-items: center;         /* keeps rows clean */
+  gap: 10px 14px;
+
+  max-width: 980px;            /* matches hero content width */
 }
 
 .inline-list li{
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 999px;
   background: rgba(77,163,255,.10);
   border: 1px solid rgba(77,163,255,.22);
   font-size: 14px;
   color: #dbe9ff;
   white-space: nowrap;
+}
+.cta{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 10px 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
